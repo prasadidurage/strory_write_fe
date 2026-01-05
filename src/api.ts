@@ -1,6 +1,6 @@
 import axios from 'axios';
 
- export const backendApi = axios.create({baseURL : 'http://localhost:3000/api'});
+ export const backendApi = axios.create({baseURL : 'https://strory-write-be.onrender.com'});
 
 backendApi.interceptors.request.use((config)=>{
  const token = localStorage.getItem('token');

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import type { RootState, AppDispatch } from "../../../store/store.ts";
 import { fetchStoriesByCategory } from "../../../slices/storySlice.ts";
 

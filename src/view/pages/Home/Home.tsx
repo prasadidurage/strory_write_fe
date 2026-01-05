@@ -15,7 +15,6 @@ export function Home() {
     const {
         categories,
         loading,
-        error,
         isDropdownOpen,
     } = useSelector((state: RootState) => state.home);
 
