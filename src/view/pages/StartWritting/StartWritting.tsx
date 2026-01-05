@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useRef } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import type { AppDispatch, RootState } from '../../../store/store.ts';
 import { getAllCategories } from '../../../slices/homeSlice.ts';
@@ -55,7 +55,7 @@ export function StartWritting() {
     const warningShownRef = useRef<boolean>(false);
     const storyDataRef = useRef<any>(null);
 
-    const { categories, loading: categoriesLoading } = useSelector((state: RootState) => state.home);
+    const { categories } = useSelector((state: RootState) => state.home);
     const {
         name, category, content, imageUrl, author, authorEmail,
         createdAt, loading, error, success, isAuthenticated, emailSending
